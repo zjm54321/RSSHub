@@ -646,6 +646,9 @@
     "/bilibili/bangumi/media/:mediaid": [
         "DIYgod"
     ],
+    "/bilibili/channel/:channelid/hot/:disableEmbed?": [
+        "3401797899"
+    ],
     "/bilibili/fav/:uid/:fid/:disableEmbed?": [
         "Qixingchen"
     ],
@@ -869,6 +872,9 @@
     ],
     "/bse/:category?/:keyword?": [
         "nczitzk"
+    ],
+    "/bsky/keyword/:keyword": [
+        "untitaker"
     ],
     "/btzj/:category?": [
         "nczitzk"
@@ -2057,8 +2063,9 @@
     "/github/branches/:user/:repo": [
         "max-arnold"
     ],
-    "/github/comments/:user/:repo/:number": [
-        "TonyRL"
+    "/github/comments/:user/:repo/:number?": [
+        "TonyRL",
+        "FliegendeWurst"
     ],
     "/github/contributors/:user/:repo/:order?/:anon?": [
         "zoenglinghou"
@@ -2736,6 +2743,18 @@
     ],
     "/hunanpea/rsks/:guid": [
         "TonyRL"
+    ],
+    "/hunau/gfxy/:type?/:page?": [
+        "lcandy2"
+    ],
+    "/hunau/ied/:type?/:category?/:page?": [
+        "lcandy2"
+    ],
+    "/hunau/jwc/:type?/:page?": [
+        "lcandy2"
+    ],
+    "/hunau/xky/:type?/:page?": [
+        "lcandy2"
     ],
     "/huoxian/zone": [
         "p7e4"
@@ -4165,6 +4184,9 @@
     "/ouc/jwc": [
         "3401797899"
     ],
+    "/ouc/jwgl": [
+        "3401797899"
+    ],
     "/ouc/yjs": [
         "shengmaosu"
     ],
@@ -4561,6 +4583,9 @@
     ],
     "/rattibha/user/:user": [
         "yshalsager"
+    ],
+    "/rawkuma/manga/:id": [
+        "nczitzk"
     ],
     "/reactnewsletter": [
         "meixger"
