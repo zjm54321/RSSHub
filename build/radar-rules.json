@@ -3832,6 +3832,17 @@
         ],
         "target": "/caixin/database"
       }
+    ],
+    "weekly": [
+      {
+        "title": "财新周刊",
+        "docs": "https://docs.rsshub.app/traditional-media.html#cai-xin-wang",
+        "source": [
+          "/",
+          "/*"
+        ],
+        "target": "/caixin/weekly"
+      }
     ]
   },
   "cste.org.cn": {
@@ -6960,6 +6971,16 @@
         ],
         "target": "/ecust/yjs"
       }
+    ],
+    "jwc": [
+      {
+        "title": "本科教务处信息网",
+        "docs": "https://docs.rsshub.app/university.html#hua-dong-li-gong-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/ecust/jwc/notice/:category?"
+      }
     ]
   },
   "eet-china.com": {
@@ -9795,6 +9816,39 @@
         "docs": "https://docs.rsshub.app/program-update.html#greasy-fork",
         "source": "/:language/scripts/:script/versions",
         "target": "/greasyfork/scripts/:script/versions"
+      }
+    ]
+  },
+  "grist.org": {
+    "_name": "Grist",
+    ".": [
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/en/new-media.html#grist",
+        "source": [
+          "/articles/"
+        ],
+        "target": "/grist/"
+      },
+      {
+        "title": "Featured",
+        "docs": "https://docs.rsshub.app/en/new-media.html#grist",
+        "source": "/",
+        "target": "/grist/featured"
+      },
+      {
+        "title": "Series",
+        "docs": "https://docs.rsshub.app/en/new-media.html#grist",
+        "source": "/series/:series",
+        "target": "/grist/series/:series"
+      },
+      {
+        "title": "Topic",
+        "docs": "https://docs.rsshub.app/en/new-media.html#grist",
+        "source": [
+          "/:topic"
+        ],
+        "target": "/grist/topic/:topic"
       }
     ]
   },
@@ -19872,6 +19926,52 @@
           "/"
         ],
         "target": "/setn/女孩"
+      }
+    ]
+  },
+  "seu.edu.cn": {
+    "_name": "东南大学",
+    "cse": [
+      {
+        "title": "计算机技术与工程学院",
+        "docs": "https://docs.rsshub.app/university.html#dong-nan-da-xue",
+        "source": [
+          "/:type/list.htm",
+          "/"
+        ],
+        "target": "/seu/cse/:type?"
+      }
+    ],
+    "radio": [
+      {
+        "title": "信息科学与工程学院学术活动",
+        "docs": "https://docs.rsshub.app/university.html#dong-nan-da-xue",
+        "source": [
+          "/_s29/15986/list.psp",
+          "/"
+        ],
+        "target": "/seu/radio/academic"
+      }
+    ],
+    "seugs": [
+      {
+        "title": "研究生院全部公告",
+        "docs": "https://docs.rsshub.app/university.html#dong-nan-da-xue-yan-jiu-sheng-yuan-quan-bu-gong-gao",
+        "source": [
+          "/26671/list.htm",
+          "/"
+        ],
+        "target": "/seu/yjs"
+      }
+    ],
+    "yzb": [
+      {
+        "title": "研究生招生网通知公告",
+        "docs": "https://docs.rsshub.app/university.html#dong-nan-da-xue",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/seu/yzb/:type"
       }
     ]
   },
