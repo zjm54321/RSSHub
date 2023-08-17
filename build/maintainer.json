@@ -474,7 +474,16 @@
     "/aqara/community/:id?/:keyword?": [
         "nczitzk"
     ],
-    "/aqara/news": [
+    "/aqara/:region/news": [
+        "nczitzk"
+    ],
+    "/aqara/:region/blog": [
+        "nczitzk"
+    ],
+    "/aqara/:region/category/:id": [
+        "nczitzk"
+    ],
+    "/aqara/:region/tag/:id": [
         "nczitzk"
     ],
     "/arcteryx/new-arrivals/:country/:gender": [
@@ -661,7 +670,7 @@
     "/bilibili/followings/article/:uid": [
         "woshiluo"
     ],
-    "/bilibili/followings/dynamic/:uid/:disableEmbed?": [
+    "/bilibili/followings/dynamic/:uid/:showEmoji?/:disableEmbed?": [
         "TigerCubDen"
     ],
     "/bilibili/followings/video/:uid/:disableEmbed?": [
@@ -730,7 +739,7 @@
     "/bilibili/user/collection/:uid/:sid/:disableEmbed?": [
         "shininome"
     ],
-    "/bilibili/user/dynamic/:uid/:disableEmbed?": [
+    "/bilibili/user/dynamic/:uid/:showEmoji?/:disableEmbed?": [
         "DIYgod",
         "zytomorrow"
     ],
@@ -958,6 +967,9 @@
     ],
     "/cas/cg/:caty?": [
         "nczitzk"
+    ],
+    "/cas/genetics/xshd": [
+        "panyq357"
     ],
     "/cas/ia/yjs": [
         "shengmaosu"
@@ -1884,6 +1896,18 @@
     "/filmdeepfocus/:category?": [
         "nczitzk"
     ],
+    "/finology/bullets": [
+        "Rjnishant530"
+    ],
+    "/finology/:category": [
+        "Rjnishant530"
+    ],
+    "/finology/most-viewed/:time": [
+        "Rjnishant530"
+    ],
+    "/finology/tag/:topic": [
+        "Rjnishant530"
+    ],
     "/finviz/news/:ticker": [
         "HenryQW"
     ],
@@ -1928,6 +1952,9 @@
     ],
     "/followin/:categoryId?/:lang?": [
         "TonyRL"
+    ],
+    "/foresightnews": [
+        "nczitzk"
     ],
     "/foresightnews/": [
         "nczitzk"
@@ -4736,6 +4763,9 @@
     ],
     "/scau/yzb": [
         "shengmaosu"
+    ],
+    "/science/blogs/:name?": [
+        "TomHodson"
     ],
     "/science/cover": [
         "y9c",
