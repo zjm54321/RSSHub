@@ -632,6 +632,13 @@
     "/bast/:path+": [
         "nczitzk"
     ],
+    "/bbc/:channel": [
+        "HenryQW",
+        "DIYgod"
+    ],
+    "/bbc/:lang/:channel?": [
+        "HenryQW"
+    ],
     "/bbcnewslabs/news": [
         "elxy"
     ],
@@ -1497,6 +1504,9 @@
     "/deepmind/blog": [
         "nczitzk",
         "TonyRL"
+    ],
+    "/deltaio/blog": [
+        "RengarLee"
     ],
     "/devolverdigital/blog": [
         "XXY233"
@@ -3639,6 +3649,9 @@
     "/luogu/user/blog/:username": [
         "ftiasch"
     ],
+    "/luxiangdong/archive": [
+        "Levix"
+    ],
     "/lvv2/news/:channel/:sort?": [
         "Fatpandac"
     ],
@@ -5692,6 +5705,21 @@
     "/tongji/yjs": [
         "shengmaosu"
     ],
+    "/toodaylab/column/:id": [
+        "nczitzk"
+    ],
+    "/toodaylab/field/:id": [
+        "nczitzk"
+    ],
+    "/toodaylab/hot": [
+        "nczitzk"
+    ],
+    "/toodaylab/posts": [
+        "nczitzk"
+    ],
+    "/toodaylab/topic/:id": [
+        "nczitzk"
+    ],
     "/tophub/:id": [
         "LogicJake"
     ],
@@ -6844,7 +6872,6 @@
     "/dytt/index": [],
     "/rs05/rs05": [],
     "/qutoutiao/category/:cid": [],
-    "/bbc/:site?/:channel?": [],
     "/pediy/topic/:category?/:type?": [],
     "/miniapp/article/:category": [],
     "/miniapp/store/newest": [],

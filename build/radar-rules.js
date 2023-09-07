@@ -1655,6 +1655,9 @@
         source:[ "/col",
           "/" ],
         target:(params, url) => `/bast/${new URL(url).href.match(/bast\.net\.cn\/(.*)/)[1].replace(/\/index\.html/, '')}` } ] },
+  "bbc.com":{ _name:"BBC",
+    ".":[ { title:"News",
+        docs:"https://docs.rsshub.app/routes/traditional-media#bbc" } ] },
   "bbcnewslabs.co.uk":{ _name:"BBC News Labs",
     ".":[ { title:"News",
         docs:"https://docs.rsshub.app/routes/programming#bbc-news-labs",
@@ -3188,6 +3191,11 @@
         source:[ "/blog",
           "/" ],
         target:"/blog" } ] },
+  "delta.io":{ _name:"Delta Lake",
+    ".":[ { title:"Blogs",
+        docs:"https://docs.rsshub.app/routes/blog#deltalake",
+        source:"/blog",
+        target:"/deltaio/blog" } ] },
   "devolverdigital.com":{ _name:"DevolverDigital",
     ".":[ { title:"官方博客",
         docs:"https://docs.rsshub.app/routes/blog#devolverdigital",
@@ -6329,7 +6337,10 @@
         docs:"https://docs.rsshub.app/routes/other#japanpost-ri-ben-you-bian",
         source:"/services/srv/search/direct",
         target:(params, url) => {
-                    const reqCode = new URL(url).searchParams.get('reqCodeNo1').toUpperCase();
+                    const reqCode = new URL(url).searchParams
+                        .get('reqCodeNo1')
+                        .replace(/[^0-9a-zA-Z]/g, '')
+                        .toUpperCase();
                     const locale = new URL(url).searchParams.get('locale').toLowerCase();
                     if ((reqCode.search(/^(?:\d{11,12}|[A-Z]{2}\d{9}[A-Z]{2})$/) === 0 && locale === 'ja') || locale === 'en') {
                         return `/japanpost/track/${reqCode}/${locale}`;
@@ -7469,7 +7480,7 @@
   "latepost.com":{ _name:"晚点 Latepost",
     ".":[ { title:"报道",
         docs:"https://docs.rsshub.app/routes/new-media#wan-dian-latepost-bao-dao",
-        source:"/",
+        source:"*",
         target:(params, url) => {
                     url = new URL(url);
                     const proma = url.searchParams.get('proma');
@@ -7780,6 +7791,11 @@
         docs:"https://docs.rsshub.app/routes/programming#luo-gu",
         source:[ "/blog/:name" ],
         target:"/luogu/user/blog/:name" } ] },
+  "luxiangdong.com":{ _name:"土猛的员外",
+    ".":[ { title:"文章",
+        docs:"https://docs.rsshub.app/routes/blog#luxiangdong",
+        source:[ "/" ],
+        target:"/luxiangdong/archive" } ] },
   "lvv2.com":{ _name:"LVV2",
     ".":[ { title:"热门",
         docs:"https://docs.rsshub.app/routes/new-media#lvv2",
@@ -12556,6 +12572,27 @@
         source:[ "/zsxw/ggtz.htm",
           "/" ],
         target:"/tongji/yjs" } ] },
+  "toodaylab.com":{ _name:"理想生活实验室",
+    ".":[ { title:"滚动",
+        docs:"https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-gun-dong",
+        source:[ "/posts" ],
+        target:"/toodaylab/posts" },
+      { title:"最热",
+        docs:"https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-zui-re",
+        source:[ "/posts" ],
+        target:"/toodaylab/hot" },
+      { title:"专栏",
+        docs:"https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-zhuan-lan",
+        source:[ "/column/:id" ],
+        target:"/toodaylab/column/:id" },
+      { title:"领域",
+        docs:"https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-ling-yu",
+        source:[ "/field/:id" ],
+        target:"/toodaylab/field/:id" },
+      { title:"话题",
+        docs:"https://docs.rsshub.app/routes/new-media#li-xiang-sheng-huo-shi-yan-shi-hua-ti",
+        source:[ "/topic/:id" ],
+        target:"/toodaylab/topic/:id" } ] },
   "tophub.today":{ _name:"今日热榜",
     ".":[ { title:"榜单",
         docs:"https://docs.rsshub.app/routes/new-media#jin-ri-re-bang-bang-dan",
