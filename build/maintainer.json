@@ -420,6 +420,12 @@
     "/ally/rail/:category?/:topic?": [
         "Rongronggg9"
     ],
+    "/alternativeto/software/:name/:routeParams?": [
+        "JimenezLi"
+    ],
+    "/alternativeto/platform/:name/:routeParams?": [
+        "JimenezLi"
+    ],
     "/amazon/awsblogs/:locale?": [
         "HankChow"
     ],
@@ -2119,6 +2125,9 @@
     "/gamebase/news/:type?/:category?": [
         "nczitzk"
     ],
+    "/gamegene/news": [
+        "lone1y-51"
+    ],
     "/gamer/gnn/:category?": [
         "Arracc"
     ],
@@ -3674,6 +3683,9 @@
     "/lovelive-anime/schedules/:serie/:category?": [
         "axojhf"
     ],
+    "/lsnu/jiaowc/tzgg/:category?": [
+        "nyaShine"
+    ],
     "/luogu/contest": [
         "prnake"
     ],
@@ -4874,6 +4886,9 @@
     "/rsshub/transform/json/:url/:routeParams": [
         "ttttmr"
     ],
+    "/rsshub/transform/sitemap/:url/:routeParams?": [
+        "flrngel"
+    ],
     "/ruancan/ruancan/category/:category?": [
         "nczitzk"
     ],
@@ -4990,6 +5005,9 @@
     ],
     "/scut/seie/news_center": [
         "auto-bot-ty"
+    ],
+    "/scut/smae/:category?": [
+        "Ermaotie"
     ],
     "/scut/yjs": [
         "shengmaosu"
@@ -5289,6 +5307,9 @@
     ],
     "/sputniknews/:category?/:language?": [
         "nczitzk"
+    ],
+    "/sqmc/www/:category?": [
+        "nyaShine"
     ],
     "/sse/convert/:query?": [
         "kt286"
