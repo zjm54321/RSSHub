@@ -1037,6 +1037,9 @@
     "/cbaigui/:path+": [
         "nczitzk"
     ],
+    "/cbc/topics/:topic?": [
+        "wb14123"
+    ],
     "/cbirc/:category?": [
         "JkCheung"
     ],
@@ -3575,6 +3578,9 @@
     "/leiphone/leiphone/newsflash": [
         "vlcheng"
     ],
+    "/lemmy/:community/:sort?": [
+        "wb14123"
+    ],
     "/lever/:domain": [
         "tsarlewey"
     ],
@@ -3871,7 +3877,20 @@
     "/mvm/:category?": [
         "nczitzk"
     ],
-    "/mydrivers/:type?/:id?": [
+    "/mydrivers/hot": [
+        "nczitzk"
+    ],
+    "/mydrivers/new": [
+        "kt286",
+        "nczitzk"
+    ],
+    "/mydrivers/rank/:range?": [
+        "nczitzk"
+    ],
+    "/mydrivers/zhibo": [
+        "nczitzk"
+    ],
+    "/mydrivers/:category?": [
         "nczitzk"
     ],
     "/myfigurecollection/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?": [
@@ -6408,6 +6427,9 @@
     "/xmnn/epaper/:id?": [
         "nczitzk"
     ],
+    "/xmut/jwc/:type/:method": [
+        "icecliffs"
+    ],
     "/xsijishe/forum/:fid": [
         "akynazh"
     ],
@@ -7194,7 +7216,6 @@
     "/polimi/news/:language?": [],
     "/dekudeals/:type": [],
     "/metacritic/release/:platform/:type/:sort?": [],
-    "/kkj/news": [],
     "/sixthtone/news": [],
     "/aiyanxishe/:id/:sort?": [],
     "/huodongxing/explore": [],
@@ -7379,7 +7400,6 @@
     "/xinquji/today": [],
     "/xinquji/today/internal": [],
     "/gbcc/trust": [],
-    "/cbc/topics/:topic?": [],
     "/chinadialogue/topics/:topic": [],
     "/chinadialogue/:column": [],
     "/ifnews/:cid": [],
