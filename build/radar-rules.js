@@ -2338,6 +2338,10 @@
   "bookfere.com":{ _name:"书伴",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/routes/reading#shu-ban" } ] },
+  "booru.org":{ _name:"Booru",
+    mmda:[ { title:"MMDArchive 标签查询",
+        docs:"https://docs.rsshub.app/routes/picture#booru-mmdarchive-biao-qian-cha-xun",
+        source:"/index.php" } ] },
   "brave.com":{ _name:"Brave",
     ".":[ { title:"Release Notes",
         docs:"https://docs.rsshub.app/routes/program-update#brave-release-notes",
@@ -4879,6 +4883,29 @@
         docs:"https://docs.rsshub.app/routes/picture#fantia",
         source:[ "/fanclubs/:id" ],
         target:"/fantia/user/:id" } ] },
+  "farmatters.com":{ _name:"Farmatters",
+    ".":[ { title:"Viewpoint",
+        docs:"https://docs.rsshub.app/routes/new-media#farmatters-viewpoint",
+        source:[ "/news" ],
+        target:"/farmatters/news" },
+      { title:"Exclusive",
+        docs:"https://docs.rsshub.app/routes/new-media#farmatters-exclusive",
+        source:[ "/exclusive" ],
+        target:"/farmatters/exclusive" },
+      { title:"Tag",
+        docs:"https://docs.rsshub.app/routes/new-media#farmatters-tag",
+        source:[ "/tag/:id",
+          "/:locale/tag/:id" ],
+        target:(params) => {
+                    const id = params.id;
+                    const locale = params.locale;
+
+                    return `/farmatters/tag${id ? `/${id}${locale ? `/${locale}` : ''}` : ''}`;
+                } },
+      { title:"Wiki",
+        docs:"https://docs.rsshub.app/routes/new-media#farmatters-wiki",
+        source:[ "/wiki" ],
+        target:"/farmatters/wiki" } ] },
   "fastbull.cn":{ _name:"法布财经",
     ".":[ { title:"新闻",
         docs:"https://docs.rsshub.app/routes/finance#fa-bu-cai-jing-xin-wen",
@@ -5938,6 +5965,11 @@
         docs:"https://docs.rsshub.app/routes/government#quan-guo-zhe-xue-she-hui-ke-xue-gong-zuo-ban-gong-shi",
         source:[ "/*path" ],
         target:(params) => `/gov/nopss/${params.path.replace('/index.html', '')}` } ] },
+  "npc.gov.cn":{ _name:"中国人大网",
+    ".":[ { title:"通用",
+        docs:"https://docs.rsshub.app/routes/government#zhong-guo-ren-da-wang",
+        source:[ "/npc/c2/:caty" ],
+        target:"/gov/npc/:caty" } ] },
   "nrta.gov.cn":{ _name:"国家广播电视总局",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/routes/government#guo-jia-guang-bo-dian-shi-zong-ju",
@@ -9149,6 +9181,37 @@
         docs:"https://docs.rsshub.app/routes/picture#mei-tu-she-zui-xin",
         source:[ "/" ],
         target:"/meituclub/latest" } ] },
+  "metacritic.com":{ _name:"Metacritic",
+    ".":[ { title:"Games",
+        docs:"https://docs.rsshub.app/routes/new-media#metacritic-games",
+        source:[ "/browse/game/:params*" ],
+        target:(params, url) => {
+                    url = new URL(url);
+                    const sort = params.params.split(/\//).pop();
+                    const filter = url.searchParams.toString();
+
+                    return `/metacritic/game${sort ? `/${sort}${filter ? `/${filter}` : ''}` : ''}`;
+                } },
+      { title:"Movies",
+        docs:"https://docs.rsshub.app/routes/new-media#metacritic-movies",
+        source:[ "/browse/movie/:params*" ],
+        target:(params, url) => {
+                    url = new URL(url);
+                    const sort = params.params.split(/\//).pop();
+                    const filter = url.searchParams.toString();
+
+                    return `/metacritic/movie${sort ? `/${sort}${filter ? `/${filter}` : ''}` : ''}`;
+                } },
+      { title:"TV Shows",
+        docs:"https://docs.rsshub.app/routes/new-media#metacritic-tv-shows",
+        source:[ "/browse/tv/:params*" ],
+        target:(params, url) => {
+                    url = new URL(url);
+                    const sort = params.params.split(/\//).pop();
+                    const filter = url.searchParams.toString();
+
+                    return `/metacritic/tv${sort ? `/${sort}${filter ? `/${filter}` : ''}` : ''}`;
+                } } ] },
   "meteor.today":{ _name:"Meteor",
     ".":[ { title:"看板",
         docs:"https://docs.rsshub.app/routes/bbs#meteor",
@@ -9774,6 +9837,12 @@
         source:[ "/search/label/:label",
           "/" ],
         target:"/mygopen/:label?" } ] },
+  "mymusicsheet.com":{ _name:"MyMusicSheet",
+    ".":[ { title:"User Sheets",
+        docs:"https://docs.rsshub.app/routes/shopping#mymusicsheet-user-sheets",
+        source:[ ":username/*",
+          "/:username" ],
+        target:"/mymusicsheet/user/sheets/:username" } ] },
   "mysql.com":{ _name:"MySQL",
     dev:[ { title:"Release Notes",
         docs:"https://docs.rsshub.app/routes/programming#mysql-release-notes",
@@ -11790,7 +11859,12 @@
         docs:"https://docs.rsshub.app/routes/university#hua-nan-nong-ye-da-xue",
         source:[ "/2136/list1.htm",
           "/" ],
-        target:"/scau/yzb" } ] },
+        target:"/scau/yzb" } ],
+    yjsy:[ { title:"研究生院通知",
+        docs:"https://docs.rsshub.app/routes/university#hua-nan-nong-ye-da-xue",
+        source:[ "/208/list.htm",
+          "/" ],
+        target:"/scau/yjsy" } ] },
   "science.org":{ _name:"Science Magazine",
     ".":[ { title:"本期刊物",
         docs:"https://docs.rsshub.app/routes/journal#science-xi-lie",
@@ -15694,9 +15768,10 @@
     ".":[ { title:"文章",
         docs:"https://docs.rsshub.app/routes/blog#zhu-bai",
         source:[ "/" ] } ],
-    analy:[ { title:"TOP 20",
+    analy:[ { title:"上周热门 TOP 20",
         docs:"https://docs.rsshub.app/routes/blog#zhu-bai",
-        source:[ "/" ] } ] },
+        source:[ "/" ],
+        target:"/zhubai/top20" } ] },
   "zjgtjy.cn":{ _name:"浙江省土地使用权网上交易系统",
     ".":[ { title:"全部更新",
         docs:"https://docs.rsshub.app/routes/government",

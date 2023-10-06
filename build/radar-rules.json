@@ -4172,6 +4172,16 @@
       }
     ]
   },
+  "booru.org": {
+    "_name": "Booru",
+    "mmda": [
+      {
+        "title": "MMDArchive 标签查询",
+        "docs": "https://docs.rsshub.app/routes/picture#booru-mmdarchive-biao-qian-cha-xun",
+        "source": "/index.php"
+      }
+    ]
+  },
   "brave.com": {
     "_name": "Brave",
     ".": [
@@ -9300,6 +9310,43 @@
       }
     ]
   },
+  "farmatters.com": {
+    "_name": "Farmatters",
+    ".": [
+      {
+        "title": "Viewpoint",
+        "docs": "https://docs.rsshub.app/routes/new-media#farmatters-viewpoint",
+        "source": [
+          "/news"
+        ],
+        "target": "/farmatters/news"
+      },
+      {
+        "title": "Exclusive",
+        "docs": "https://docs.rsshub.app/routes/new-media#farmatters-exclusive",
+        "source": [
+          "/exclusive"
+        ],
+        "target": "/farmatters/exclusive"
+      },
+      {
+        "title": "Tag",
+        "docs": "https://docs.rsshub.app/routes/new-media#farmatters-tag",
+        "source": [
+          "/tag/:id",
+          "/:locale/tag/:id"
+        ]
+      },
+      {
+        "title": "Wiki",
+        "docs": "https://docs.rsshub.app/routes/new-media#farmatters-wiki",
+        "source": [
+          "/wiki"
+        ],
+        "target": "/farmatters/wiki"
+      }
+    ]
+  },
   "fastbull.cn": {
     "_name": "法布财经",
     ".": [
@@ -11263,6 +11310,19 @@
         "source": [
           "/*path"
         ]
+      }
+    ]
+  },
+  "npc.gov.cn": {
+    "_name": "中国人大网",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-guo-ren-da-wang",
+        "source": [
+          "/npc/c2/:caty"
+        ],
+        "target": "/gov/npc/:caty"
       }
     ]
   },
@@ -17301,6 +17361,32 @@
       }
     ]
   },
+  "metacritic.com": {
+    "_name": "Metacritic",
+    ".": [
+      {
+        "title": "Games",
+        "docs": "https://docs.rsshub.app/routes/new-media#metacritic-games",
+        "source": [
+          "/browse/game/:params*"
+        ]
+      },
+      {
+        "title": "Movies",
+        "docs": "https://docs.rsshub.app/routes/new-media#metacritic-movies",
+        "source": [
+          "/browse/movie/:params*"
+        ]
+      },
+      {
+        "title": "TV Shows",
+        "docs": "https://docs.rsshub.app/routes/new-media#metacritic-tv-shows",
+        "source": [
+          "/browse/tv/:params*"
+        ]
+      }
+    ]
+  },
   "meteor.today": {
     "_name": "Meteor",
     ".": [
@@ -18358,6 +18444,20 @@
           "/"
         ],
         "target": "/mygopen/:label?"
+      }
+    ]
+  },
+  "mymusicsheet.com": {
+    "_name": "MyMusicSheet",
+    ".": [
+      {
+        "title": "User Sheets",
+        "docs": "https://docs.rsshub.app/routes/shopping#mymusicsheet-user-sheets",
+        "source": [
+          ":username/*",
+          "/:username"
+        ],
+        "target": "/mymusicsheet/user/sheets/:username"
       }
     ]
   },
@@ -21893,6 +21993,17 @@
           "/"
         ],
         "target": "/scau/yzb"
+      }
+    ],
+    "yjsy": [
+      {
+        "title": "研究生院通知",
+        "docs": "https://docs.rsshub.app/routes/university#hua-nan-nong-ye-da-xue",
+        "source": [
+          "/208/list.htm",
+          "/"
+        ],
+        "target": "/scau/yjsy"
       }
     ]
   },
@@ -29140,11 +29251,12 @@
     ],
     "analy": [
       {
-        "title": "TOP 20",
+        "title": "上周热门 TOP 20",
         "docs": "https://docs.rsshub.app/routes/blog#zhu-bai",
         "source": [
           "/"
-        ]
+        ],
+        "target": "/zhubai/top20"
       }
     ]
   },
