@@ -272,6 +272,9 @@
     "/aamacau/aamacau/:category?/:id?": [
         "nczitzk"
     ],
+    "/abc/:category?": [
+        "nczitzk"
+    ],
     "/abmedia/abmedia/:category?": [
         "Fatpandac"
     ],
@@ -464,7 +467,7 @@
     "/app-center/release/:user/:app/:distribution_group": [
         "Rongronggg9"
     ],
-    "/apple/apps/update/:country/:id": [
+    "/apple/apps/update/:country/:id/:platform?": [
         "EkkoG",
         "nczitzk"
     ],
@@ -1148,6 +1151,9 @@
     ],
     "/chiculture/topic/:category?": [
         "nczitzk"
+    ],
+    "/china/finance/:category?": [
+        "KingJem"
     ],
     "/china/news/military": [
         "jiaaoMario"
@@ -4537,6 +4543,10 @@
     "/patagonia/patagonia/new-arrivals/:category": [
         "NavePnow"
     ],
+    "/paulgraham/articles": [
+        "Maecenas",
+        "nczitzk"
+    ],
     "/penguin-random-house/the-read-down": [
         "StevenRCE0"
     ],
@@ -7485,7 +7495,6 @@
     "/aliyun-kernel/index": [],
     "/vulture/:tag/:excludetags?": [],
     "/xinwenlianbo/index": [],
-    "/blogs/paulgraham": [],
     "/invisionapp/inside-design": [],
     "/mlog-club/topics/:node": [],
     "/mlog-club/projects": [],
@@ -7749,7 +7758,6 @@
     "/aom/journal/:id": [],
     "/icity/:id": [],
     "/anki/changes": [],
-    "/abc/:id?": [],
     "/huawei/xinsheng/:caty?/:order?/:keyword?": [],
     "/ow/patch": [],
     "/cktest/app/:ctgroup?/:domain?": [],
