@@ -1962,7 +1962,8 @@
         "xyqfer"
     ],
     "/douban/doulist/:id": [
-        "LogicJake"
+        "LogicJake",
+        "honue"
     ],
     "/douban/event/hot/:locationId": [
         "xyqfer"
@@ -3653,6 +3654,9 @@
     "/invisionapp/inside-design": [],
     "/iplay/home": [],
     "/ipsw/index/:ptype/:pname": [],
+    "/iqilu/v/category?": [
+        "nczitzk"
+    ],
     "/iqiyi/album/:id": [
         "TonyRL"
     ],
