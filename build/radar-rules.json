@@ -12978,6 +12978,18 @@
       }
     ]
   },
+  "hostmonit.com": {
+    "_name": "全球主机监控",
+    "stock": [
+      {
+        "title": "CloudFlareYes",
+        "docs": "https://docs.rsshub.app/routes/other#quan-qiu-zhu-ji-jian-kong-cloudflareyes",
+        "source": [
+          "/:type"
+        ]
+      }
+    ]
+  },
   "hotchina.news": {
     "_name": "辛華社",
     ".": [
@@ -30438,6 +30450,26 @@
           "/"
         ],
         "target": "/zhubai/top20"
+      }
+    ]
+  },
+  "zimuxia.cn": {
+    "_name": "FIX 字幕侠",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/multimedia#fix-zi-mu-xia",
+        "source": [
+          "/我们的作品"
+        ]
+      },
+      {
+        "title": "剧集",
+        "docs": "https://docs.rsshub.app/routes/multimedia#fix-zi-mu-xia",
+        "source": [
+          "/portfolio/:id"
+        ],
+        "target": "/zimuxia/portfolio/:id"
       }
     ]
   },

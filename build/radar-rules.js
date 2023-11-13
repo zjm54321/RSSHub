@@ -6771,6 +6771,15 @@
         docs:"https://docs.rsshub.app/routes/government#xiang-gang-wei-sheng-fang-hu-zhong-xin-fen-lei",
         source:[ "/" ],
         target:"/hongkong/chp/:category?/:language?" } ] },
+  "hostmonit.com":{ _name:"全球主机监控",
+    stock:[ { title:"CloudFlareYes",
+        docs:"https://docs.rsshub.app/routes/other#quan-qiu-zhu-ji-jian-kong-cloudflareyes",
+        source:[ "/:type" ],
+        target:(params) => {
+                    const type = params.type;
+
+                    return `/hostmonit/${type}`;
+                } } ] },
   "hotchina.news":{ _name:"辛華社",
     ".":[ { title:"首页",
         docs:"https://docs.rsshub.app/routes/new-media#xin-hua-she-shou-ye",
@@ -16417,6 +16426,15 @@
         docs:"https://docs.rsshub.app/routes/blog#zhu-bai",
         source:[ "/" ],
         target:"/zhubai/top20" } ] },
+  "zimuxia.cn":{ _name:"FIX 字幕侠",
+    ".":[ { title:"分类",
+        docs:"https://docs.rsshub.app/routes/multimedia#fix-zi-mu-xia",
+        source:[ "/我们的作品" ],
+        target:(params, url) => `/zimuxia/${new URL(url).searchParams.get('cat')}` },
+      { title:"剧集",
+        docs:"https://docs.rsshub.app/routes/multimedia#fix-zi-mu-xia",
+        source:[ "/portfolio/:id" ],
+        target:"/zimuxia/portfolio/:id" } ] },
   "zjgtjy.cn":{ _name:"浙江省土地使用权网上交易系统",
     ".":[ { title:"全部更新",
         docs:"https://docs.rsshub.app/routes/government",

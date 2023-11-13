@@ -3391,6 +3391,9 @@
         "nczitzk"
     ],
     "/hopper/:lowestOnly/:from/:to?": [],
+    "/hostmonit/cloudflareyes/:type?": [
+        "nczitzk"
+    ],
     "/hotchina": [
         "nczitzk"
     ],
@@ -7988,8 +7991,12 @@
     "/zhuixinfan/list": [],
     "/zhutix/latest": [],
     "/zimuku/:type?": [],
-    "/zimuxia/:category?": [],
-    "/zimuxia/portfolio/:id": [],
+    "/zimuxia/:category?": [
+        "nczitzk"
+    ],
+    "/zimuxia/portfolio/:id": [
+        "nczitzk"
+    ],
     "/zimuzu/resource/:id?": [],
     "/zimuzu/top/:range/:type": [],
     "/ziroom/room/:city/:iswhole/:room/:keyword": [],
