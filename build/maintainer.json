@@ -851,6 +851,9 @@
     "/bilibili/partion/ranking/:tid/:days?/:disableEmbed?": [
         "lengthmin"
     ],
+    "/bilibili/platform/:area?/:p_type?/:uid?": [
+        "nightmare-mio"
+    ],
     "/bilibili/popular/all": [
         "ziminliu"
     ],
@@ -1951,6 +1954,9 @@
     "/dorohedoro/news": [
         "nczitzk"
     ],
+    "/douban/:id/discussion": [
+        "nightmare-mio"
+    ],
     "/douban/book/latest": [
         "fengkx"
     ],
@@ -2735,6 +2741,9 @@
     "/google/album/:id": [
         "hoilc"
     ],
+    "/google/alerts/:keyword": [
+        "TonyRL"
+    ],
     "/google/citations/:id": [
         "KellyHwong"
     ],
@@ -2947,6 +2956,9 @@
     "/gov/mohurd/policy": [],
     "/gov/moj/aac/news/:type?": [
         "TonyRL"
+    ],
+    "/gov/mot/:category?": [
+        "nczitzk"
     ],
     "/gov/ndrc/xwdt/:caty?": [],
     "/gov/news/:uid": [
@@ -4327,7 +4339,12 @@
     "/linovelib/novel/:id": [
         "misakicoca"
     ],
-    "/liquipedia/dota2/matches/:id": [],
+    "/liquipedia/counterstrike/matches/:team": [
+        "CookiePieWw"
+    ],
+    "/liquipedia/dota2/matches/:id": [
+        "wzekin"
+    ],
     "/lit/jwc": [],
     "/lit/tw/:name?": [],
     "/lit/xwzx/:name?": [],
@@ -5665,6 +5682,12 @@
     "/putty/changes": [
         "nczitzk"
     ],
+    "/qbitai/category/:category": [
+        "FuryMartin"
+    ],
+    "/qbitai/tag/:tag": [
+        "FuryMartin"
+    ],
     "/qbittorrent/news": [
         "TonyRL"
     ],
@@ -6199,6 +6222,18 @@
     ],
     "/shou/www/:type": [],
     "/showroom/room/:id": [],
+    "/showstart/artist/:id": [
+        "lchtao26"
+    ],
+    "/showstart/brand/:id": [
+        "lchtao26"
+    ],
+    "/showstart/event/:cityCode/:showStyle?": [
+        "lchtao26"
+    ],
+    "/showstart/search/:type/:keyword?": [
+        "lchtao26"
+    ],
     "/shu/:type?": [
         "lonelyion"
     ],
@@ -7112,6 +7147,9 @@
     "/umass/amherst/ipoevents": [],
     "/umass/amherst/ipostories": [],
     "/un/scveto": [],
+    "/uniqlo/new/:country/:category": [
+        "DIYgod"
+    ],
     "/uniqlo/stylingbook/:category?": [],
     "/unit-image/films/:type?": [],
     "/unusualwhales/news": [
@@ -7652,6 +7690,9 @@
     ],
     "/xmind/mindmap/:lang?": [],
     "/xmnn/epaper/:id?": [
+        "nczitzk"
+    ],
+    "/xmnn/news/:category?": [
         "nczitzk"
     ],
     "/xmu/aero/:type": [],
