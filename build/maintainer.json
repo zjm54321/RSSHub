@@ -4123,6 +4123,9 @@
     "/liulinblog/tag/:id": [
         "nczitzk"
     ],
+    "/liveuamap/:region?": [
+        "CoderSherlock"
+    ],
     "/liyuan-forums/threads": [],
     "/liyuan-forums/threads/forum/:forum_id": [],
     "/liyuan-forums/threads/topic/:topic_id": [],
@@ -6604,7 +6607,7 @@
     "/tprtc/cqzr": [],
     "/tprtc/news": [],
     "/tprtc/qyzc": [],
-    "/tradingview/blog/:language?": [
+    "/tradingview/blog/:language?/category/:category?": [
         "nczitzk"
     ],
     "/trakt/collection/:username/:type?": [],
