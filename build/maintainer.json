@@ -1195,6 +1195,9 @@
         "TonyRL"
     ],
     "/cfan/news": [],
+    "/cfmmc/:id?": [
+        "nczitzk"
+    ],
     "/cgtn/most/:type?/:time?": [],
     "/cgtn/opinions": [],
     "/cgtn/podcast/:category/:id": [
@@ -1793,6 +1796,9 @@
     ],
     "/docschina/jsweekly": [
         "daijinru"
+    ],
+    "/dol/announce/:owner?/:province?/:office?": [
+        "itpcc"
     ],
     "/domp4/detail/:id": [
         "savokiss"
@@ -2567,7 +2573,8 @@
         "TonyRL"
     ],
     "/google/citations/:id": [
-        "KellyHwong"
+        "KellyHwong",
+        "const7"
     ],
     "/google/doodles/:language?": [
         "xyqfer"
@@ -2592,6 +2599,9 @@
     ],
     "/gov/anhui/kjt/:path?": [
         "nczitzk"
+    ],
+    "/gov/beijing/bjedu/gh/:urlPath?": [
+        "TonyRL"
     ],
     "/gov/beijing/bjeea/:type": [],
     "/gov/beijing/bphc/:channel": [
@@ -4398,10 +4408,16 @@
     "/micmicidol": [],
     "/micmicidol/search/:label": [],
     "/microsoft-store/updates/:productid/:market?": [],
+    "/mihoyo/bbs/follow-list/:uid": [
+        "CaoMeiYouRen"
+    ],
     "/mihoyo/bbs/img-ranking/:game/:routeParams?": [
         "CaoMeiYouRen"
     ],
     "/mihoyo/bbs/official/:gids/:type?/:page_size?/:last_id?": [
+        "CaoMeiYouRen"
+    ],
+    "/mihoyo/bbs/user-post/:uid": [
         "CaoMeiYouRen"
     ],
     "/mihoyo/bh2/:type": [],
@@ -5797,10 +5813,12 @@
         "p7e4"
     ],
     "/secrss/author/:author": [
-        "XinRoom"
+        "XinRoom",
+        "SunBK201"
     ],
     "/secrss/category/:category?": [
-        "XinRoom"
+        "XinRoom",
+        "SunBK201"
     ],
     "/secshi": [],
     "/security/pulses": [],
