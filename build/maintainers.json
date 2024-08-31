@@ -1114,6 +1114,9 @@
   "/cdi/:id?": [
     "nczitzk"
   ],
+  "/cdu/jwgg": [
+    "uuwor"
+  ],
   "/cdzjryb/zw/projectList": [
     "TonyRL"
   ],
@@ -5609,11 +5612,11 @@
   "/sse/inquire": [
     "Jeason0228"
   ],
-  "/sse/lawandrules/:slug?": [
-    "nczitzk"
-  ],
   "/sse/renewal": [
     "Jeason0228"
+  ],
+  "/sse/sselawsrules/:category{.+}?": [
+    "nczitzk"
   ],
   "/ssm/news": [
     "Fatpandac"
@@ -5795,7 +5798,7 @@
   "/szse/projectdynamic/:type?/:stage?/:status?": [
     "nczitzk"
   ],
-  "/szse/rule": [
+  "/szse/rule/:channel{.+}?": [
     "nczitzk"
   ],
   "/szu/yz/:type?": [
